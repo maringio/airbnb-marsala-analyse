@@ -12,8 +12,9 @@ df = pd.read_csv("listings.csv")
 st.write("Anzahl Einträge:", len(df))
 st.dataframe(df.head())
 
-image = Image.open("preise_pro_monat_bereinigt.png")
-st.image(image, caption="Durchschnittlicher Airbnb-Preis pro Monat in Marsala", use_column_width=True)
+st.image("https://raw.githubusercontent.com/maringio/airbnb-marsala-analyse/main/preise_pro_monat_bereinigt.png", 
+         caption="Durchschnittlicher Airbnb-Preis pro Monat in Marsala", 
+         use_column_width=True)
 
 from PIL import Image
 
