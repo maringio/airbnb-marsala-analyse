@@ -5,7 +5,7 @@ st.title("🏠 Prezzi Airbnb a Marsala – Dati, tendenze e osservazioni")
 
 st.markdown("""
 WBenvenuti all’analisi dei dati degli alloggi Airbnb a Marsala 🇮🇹.
-Qui troverai una panoramica iniziale sul numero e le caratteristiche degli annunci su Airbnb.
+Qui troverai una panoramica iniziale sul numero e le caratteristiche degli annunci su Airbnb a Marsala.
 """)
 
 df = pd.read_csv("listings.csv")
