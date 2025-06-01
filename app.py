@@ -11,3 +11,10 @@ Qui troverai una panoramica iniziale sul numero e le caratteristiche degli annun
 df = pd.read_csv("listings.csv")
 st.write("Anzahl Einträge:", len(df))
 st.dataframe(df.head())
+
+from PIL import Image
+
+st.subheader("📊 Preisentwicklung pro Monat")
+st.markdown("Die Preise für eine Übernachtung in Marsala sind erstaunlich konstant – es zeigt sich keine starke Saisonalität.")
+image = Image.open("preise_pro_monat_bereinigt.png")
+st.image(image, caption="Durchschnittlicher Airbnb-Preis pro Monat in Marsala", use_column_width=True)
